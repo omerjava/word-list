@@ -10,7 +10,7 @@ import { renderList } from '../components/render-list.js';
  */
 export const sortWords = (event) => {
   /* -- entry point for sorting the words -- */
-  // debugger;
+  //debugger;
 
   /* -- gather user input from DOM -- */
   const howToSort = event.target.value;
@@ -20,7 +20,7 @@ export const sortWords = (event) => {
     sort the words in data.words using the logic function
     assign the newly sorted list to a variable named `sorted`
   */
- 
+
   // ... write some code ...
   data.sort = howToSort;
   const sorted = sortStrings(data.words, data.sort);

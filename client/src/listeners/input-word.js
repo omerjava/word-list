@@ -1,3 +1,3 @@
 import { inputWord } from '../handlers/input-word.js';
 
-document.getElementById('input-form').addEventListener('click', inputWord);
+export const inputWordListener = (id='') => document.getElementById(id).addEventListener('click', inputWord);

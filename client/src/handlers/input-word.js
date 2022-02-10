@@ -21,7 +21,7 @@ export const inputWord = (event) => {
   /* -- gather user input from DOM -- */
   const text = event.target.form.text.value;
   const action = event.target.value;
-
+   
   /* -- use the input and data to implement the user story --
 
     a user can add a new word to the list
@@ -44,8 +44,13 @@ export const inputWord = (event) => {
 
   if (action === 'add') {
     // ... write some code ...
-  } else if (action === 'remove') {
+    if (!isWord(text)) return (warnings.innerHTML = `"${text}" is not a word`);
+    else  data.words.push(text);
+  } 
+  else if (action === 'remove') {
     // ... write some code ...
+    if (!data.words.includes(text)) return (warnings.innerHTML = `"${text}" is not in the list`);
+    else data.words.splice(data.words.indexOf(text), 1);
   }
 
   /* -- render new words -- */
@@ -55,4 +60,5 @@ export const inputWord = (event) => {
   const listContainer = document.getElementById('list-container');
   listContainer.innerHTML = '';
   listContainer.appendChild(newList);
+
 };

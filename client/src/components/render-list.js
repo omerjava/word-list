@@ -7,6 +7,6 @@ export const renderList = (toRender = []) => {
     liEl.innerText = nextItem;
     ulEl.appendChild(liEl);
   }
-
+  
   return ulEl;
 };

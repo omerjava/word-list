@@ -1,8 +1,10 @@
+/* eslint-disable folders/match-regex */
 import { sortStrings } from './sort-strings.js';
 
+const a = 'Empty Array';
 describe('sorts the strings in an array in different ways', () => {
   describe('oldest to newest', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'oldest')).toEqual([]);
     });
     it('3 items', () => {
@@ -14,7 +16,7 @@ describe('sorts the strings in an array in different ways', () => {
     });
   });
   describe('newest to oldest', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'newest')).toEqual([]);
     });
     it('3 items', () => {
@@ -26,7 +28,7 @@ describe('sorts the strings in an array in different ways', () => {
     });
   });
   describe('alphabetical order', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'a')).toEqual([]);
     });
     it('3 items', () => {
@@ -38,7 +40,7 @@ describe('sorts the strings in an array in different ways', () => {
     });
   });
   describe('reverse-alphabetical order', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'z')).toEqual([]);
     });
     it('3 items', () => {
@@ -50,7 +52,7 @@ describe('sorts the strings in an array in different ways', () => {
     });
   });
   describe('longest to shortest', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'longest')).toEqual([]);
     });
     it('3 items', () => {
@@ -63,7 +65,7 @@ describe('sorts the strings in an array in different ways', () => {
     });
   });
   describe('shortest to longest', () => {
-    it('empty array', () => {
+    it(a, () => {
       expect(sortStrings([], 'shortest')).toEqual([]);
     });
     it('3 items', () => {

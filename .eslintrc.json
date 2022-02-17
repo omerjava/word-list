@@ -7,7 +7,7 @@
     "filenames",
     "folders",
     "boundaries",
-    "sonarjs",
+    "sonarJS",
     "disable"
   ],
   "parserOptions": {
@@ -40,7 +40,7 @@
         "no-undefined": 0
       },
       "settings": {
-        "disable/plugins": ["sonarjs"]
+        "disable/plugins": ["sonarJS"]
       },
       "env": {
         "jest": true
@@ -59,7 +59,7 @@
         "spellcheck/spell-checker": 0
       },
       "settings": {
-        "disable/plugins": ["sonarjs"]
+        "disable/plugins": ["sonarJS"]
       },
       "env": {
         "jest": true
@@ -72,7 +72,7 @@
     "airbnb-base",
     "prettier",
     "plugin:boundaries/strict",
-    "plugin:sonarjs/recommended"
+    "plugin:sonarJS/recommended"
   ],
   "rules": {
     "no-var": 1,

@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { isWord } from './is-word.js';
 
 describe('sorts the strings in an array in different ways', () => {

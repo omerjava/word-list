@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { inputWord } from '../handlers/input-word.js';
 
 export const inputWordListener = (id = '') =>

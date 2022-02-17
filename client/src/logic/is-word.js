@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 /**
  * Checks if a string is a word.  A word contains only letters.
  *

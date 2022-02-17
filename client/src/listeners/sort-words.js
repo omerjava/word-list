@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { sortWords } from '../handlers/sort-words.js';
 
 export const sortWordsListener = (id = '') =>

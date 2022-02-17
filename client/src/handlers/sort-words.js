@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { data } from '../../data.js';
 import { sortStrings } from '../logic/sort-strings.js';
 import { renderList } from '../components/render-list.js';
@@ -10,7 +11,7 @@ import { renderList } from '../components/render-list.js';
  */
 export const sortWords = (event) => {
   /* -- entry point for sorting the words -- */
-  //debugger;
+  // debugger;
 
   /* -- gather user input from DOM -- */
   const howToSort = event.target.value;

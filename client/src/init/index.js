@@ -1,5 +1,6 @@
 /* --- import all listener files so they can attach to the DOM --- */
 
+// eslint-disable-next-line folders/match-regex
 import { sortWordsListener } from '../listeners/sort-words.js';
 import { inputWordListener } from '../listeners/input-word.js';
 

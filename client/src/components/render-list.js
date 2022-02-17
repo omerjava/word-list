@@ -1,4 +1,5 @@
 // document this function!
+// eslint-disable-next-line folders/match-regex
 export const renderList = (toRender = []) => {
   const ulEl = document.createElement('ul');
 
@@ -7,6 +8,6 @@ export const renderList = (toRender = []) => {
     liEl.innerText = nextItem;
     ulEl.appendChild(liEl);
   }
-  
+
   return ulEl;
 };

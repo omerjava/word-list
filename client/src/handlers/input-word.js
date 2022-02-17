@@ -1,3 +1,4 @@
+/* eslint-disable folders/match-regex */
 import { data } from '../../data.js';
 import { isWord } from '../logic/is-word.js';
 import { sortStrings } from '../logic/sort-strings.js';
@@ -44,13 +45,12 @@ export const inputWord = (event) => {
 
   if (action === 'add') {
     // ... write some code ...
-    if (!isWord(text))
-      return void (warnings.innerHTML = `"${text}" is not a word`);
-    else data.words.push(text);
+    if (!isWord(text)) warnings.innerHTML = `"${text}" is not a word`;
+    data.words.push(text);
   } else if (action === 'remove') {
     // ... write some code ...
     if (!data.words.includes(text))
-      return void (warnings.innerHTML = `"${text}" is not in the list`);
+      warnings.innerHTML = `'${text}' is not in the list`;
     else data.words.splice(data.words.indexOf(text), 1);
   }
 
